@@ -125,6 +125,7 @@ header{
     width: 1280px;
     background-color: #e2ede8;
     display: flex;
+    flex-direction: column;
 }
 
 .section-cards { 
@@ -191,4 +192,51 @@ header{
 .cards_button:hover {
     background: rgb(218, 42, 42);
     color: white;
+}
+
+.advantages {
+    width: 1100px;
+}
+
+.text {
+    text-align: center;
+    line-height: 2.4;
+}
+
+.advantages-point {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.advantages_p {
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.circle {
+    display: flex;
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.circle_img {
+    width: 50px;
+    height: 50px;
+}
+
+.point {
+    display: flex;
+    flex: 1;
+}
+
+.advantages-point_title {
+    font-size: 22px;
 }
