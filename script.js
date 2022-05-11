@@ -73,7 +73,8 @@ function bindPostData(form){
         statusMessege.src = message.loading;
         statusMessege.style.cssText = `
             display: block;
-            margin: 0 auto;
+            width: 280px;
+            margin: auto;
         `;
         form.insertAdjacentElement('afterend', statusMessege);
 

@@ -243,9 +243,6 @@ header{
     font-size: 22px;
 }
 
-.section-job {
-    
-}
 .job {
     background: url('../img/job.webp') center center/cover no-repeat fixed, rgba(24, 163, 140, 0.7);
     background-blend-mode: multiply;
@@ -516,3 +513,40 @@ footer .content ul h2{
 .hide{
     display: none;
 }
+.footer_li{
+    list-style: none;
+    
+}
+.footer_link {
+    text-decoration: none;
+    color: #6c9894;
+}
+
+.information{
+    background-color: #f4f9f4;
+    color: #6c9894;
+}
+
+.company {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.company h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.img_webp {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+.img_peop{
+    width: 300px;
+    height: 230px;
+    
+}
+.text_comp {
+    line-height: 3;
+    margin: 0;
+}
+
