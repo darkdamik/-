@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Кадровое агенство</title>
+</head>
+<body>
+    <header>
+        <div class='head'>
+            <div class="menu">
+                <div class="logo">JO</div>
+                <div class="menu-head">
+                <ul class='head-menu'>
+                    <li class="head-menu_point"><a href= "index.html" class="link">Главная</a></li>
+                    <li class="head-menu_point"><a href= "index-info.html" class="link">О компании</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Работодателям</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Соискателям</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Гарантии</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Отзывы</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Новости</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Контакты</a></li>
+                    <li class="head-menu_point"><a href= "auth.html" class="link">Вход</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="head-title">
+                <h1 class="title">Регистрация</h1>
+                    <form>
+                        <input class="auth_input" type="text" name="fio" placeholder="ФИО"required><br>
+                        <input class="auth_input" type="text" name="login" placeholder="Логин"required><br>
+                        <input class="auth_input" type="text" name="password0" placeholder="Пароль"required><br>
+                        <input class="auth_input" type="text" name="password1" placeholder="Подтверждение пароля"required><br>
+                        <input class="auth_input" type="phone" name="phone" placeholder="Ваш номер телефона"required><br><br>
+                        <input class="auth_radio" type="radio" name="0" value="0"required> Я работодатель                   
+                        <input class="auth_radio" type="radio" name="0" value="1"required> Я соискатель
+                        <div class="buttons">
+                            <div class="buttons-employer1">
+                                <input type="submit" name="reg" value="Зарегистрироваться" class="applicant button_submit"></div>
+                        </div>
+                    </form>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="feedback">
+        <div class="order">
+            <form action="#" class="order__form">
+                <div data-close class="modal__close">&times;</div>
+                <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                <input required placeholder="Ваш email" name="email" type="email" class="modal__input">
+                <input required placeholder="Ваш коментарий" name="coment" type="coment" class="modal__input">
+
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+
+    </div>
+
+        <img src="./img/ico/telephone.gif" alt="telephone" class="telephone">
+    <footer>
+        <div class="container">
+            <div class="content">
+                <ul class="footer_title">
+                    <h2>© Все права защищены 2022 г.</h2>
+                </ul>
+                <ul class="footer_about">
+                    <h2>О нас</h2>
+                    <li class="footer_li"><a href="#" class="footer_link">О компании</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Отзывы</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Новости</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Контакты</a></li>
+                </ul>
+                <ul class="footer_services">
+                    <h2>Сервис</h2>
+                    <li class="footer_li"><a href="#" class="footer_link">Поиск сотрудников</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Найти работу</a></li>
+                </ul>
+                <ul class="footer_follow">
+                    <h2>Соц. сети</h2>
+                    <li><div class="social"><img src="./img/ico/Facebook.svg" class="social_icon" alt="facebook">Facebook</div></li>
+                    <li><div class="social"><img src="./img/ico/Instagram.svg" class="social_icon" alt="instagram">Instagram</div></li>
+                    <li><div class="social"><img src="./img/ico/Whatsapp.svg" class="social_icon" alt="whatsaap">Whatsaap</div></li>
+                    <li><div class="social"><img src="./img/ico/Twitter.svg" class="social_icon" alt="twitter">Twitter</div></li>
+                </ul>
+            </div>
+         
+        </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
