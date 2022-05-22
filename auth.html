@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style-auth.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Кадровое агенство</title>
 </head>
@@ -21,7 +21,6 @@
                     <li class="head-menu_point"><a href= "#" class="link">Соискателям</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Гарантии</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Отзывы</a></li>
-                    <li class="head-menu_point"><a href= "#" class="link">Новости</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Контакты</a></li>
                     <li class="head-menu_point"><a href= "auth.html" class="link">Вход</a></li>
                 </ul>
@@ -29,15 +28,18 @@
             </div>
             <div class="head-title">
                 <h1 class="title">Вход</h1>
-                    <form>
+                    <form action="testreg.php" method="post">
                         <input class="auth_input" type="text" name="login" placeholder="Логин"><br>
-                        <input class="auth_input" type="text" name="password" placeholder="Пароль"><br><br>
+                        <input class="auth_input" type="password" name="password" placeholder="Пароль"><br><br>
+                        <div class="buttons">
+                            <div class="buttons-employer">
+                                    <input class="employer button" type="submit" value="Вход">
+                            </div>
+                        </div>
                     </form>
+                    <div class="buttons-employer buttons"><a href="reg.html"><button class="applicant button">Регистрация</button></a></div>
                 <br>
-                <div class="buttons">
-                    <div class="buttons-employer"><a href="lk.html"><button class="employer button">Вход</button></a></div>
-                    <div class="buttons-employer"><a href="reg.html"><button class="applicant button">Регистрация</button></a></div>
-                </div>
+
             </div>
         </div>
     </header>
@@ -69,7 +71,7 @@
                     <h2>О нас</h2>
                     <li class="footer_li"><a href="#" class="footer_link">О компании</a></li>
                     <li class="footer_li"><a href="#" class="footer_link">Отзывы</a></li>
-                    <li class="footer_li"><a href="#" class="footer_link">Новости</a></li>
+                    <li class="footer_li"><a href="#" class="footer_link">Гарантии</a></li>
                     <li class="footer_li"><a href="#" class="footer_link">Контакты</a></li>
                 </ul>
                 <ul class="footer_services">

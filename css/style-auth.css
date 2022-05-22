@@ -87,7 +87,7 @@ header{
     display: flex;
     justify-content: center;
     margin: 0;
-    height: 100px;
+    height: 60px;
 }
 
 .button_submit {
@@ -128,13 +128,8 @@ header{
 }
 
 .buttons-employer {
-    padding: 10px;
     width: 200px;
-    margin: 0;
-}
-
-.buttons-employer1 {
-    padding: 10px;
+    margin: auto;
 }
 
 .section{
@@ -563,21 +558,6 @@ footer .content ul h2{
 .text_comp {
     line-height: 3;
     margin: 0;
-}
-
-.buttons{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    height: 100px;
-}
-.button {
-    width: 150px;
-    padding: 13px;
-    font-size: 20px;
-    border-radius: 25px;
-    border: none;
 }
 
 .auth_input {
