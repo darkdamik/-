@@ -29,14 +29,13 @@
             </div>
             <div class="head-title">
                 <h1 class="title">Регистрация</h1>
-                    <form>
+                    <form action="save_user.php" method="post">
                         <input class="auth_input" type="text" name="fio" placeholder="ФИО"required><br>
                         <input class="auth_input" type="text" name="login" placeholder="Логин"required><br>
-                        <input class="auth_input" type="text" name="password0" placeholder="Пароль"required><br>
-                        <input class="auth_input" type="text" name="password1" placeholder="Подтверждение пароля"required><br>
+                        <input class="auth_input" type="password" name="password" placeholder="Пароль"required><br>
                         <input class="auth_input" type="phone" name="phone" placeholder="Ваш номер телефона"required><br><br>
-                        <input class="auth_radio" type="radio" name="0" value="0"required> Я работодатель                   
-                        <input class="auth_radio" type="radio" name="0" value="1"required> Я соискатель
+                        <input class="auth_radio" type="radio" name="rad0" value="0"required> Я работодатель                   
+                        <input class="auth_radio" type="radio" name="rad0" value="1"required> Я соискатель
                         <div class="buttons">
                             <div class="buttons-employer1">
                                 <input type="submit" name="reg" value="Зарегистрироваться" class="applicant button_submit"></div>
