@@ -26,20 +26,17 @@
     //если логин и пароль введены, то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
     $login = stripslashes($login);
     $login = htmlspecialchars($login);
-   $password0 = stripslashes($password0);
-    $password0 = htmlspecialchars($password0);
-    $password1 = stripslashes($password1);
-    $password1 = htmlspecialchars($password1);
+   $password = stripslashes($password);
+    $password = htmlspecialchars($password);
     $fio = stripslashes($fio);
     $fio = htmlspecialchars($fio);
     $phone = stripslashes($phone);
     $phone = htmlspecialchars($phone);
  //удаляем лишние пробелы
     $login = trim($login);
-    $password0 = trim($password0);
-    $password1 = trim($password1);
  // подключаемся к базе
-    include ("rega.php");// файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
+    include ("rega.php");
+   // файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь 
  
     // проверка на существование пользователя с таким же логином
     $result = mysqli_query($db,"SELECT id FROM users WHERE login='$login'");
@@ -65,7 +62,7 @@ case "1" :
     
     if ($result2==TRUE)
     {
-      echo "<script>alert('Вы успешно зарегистрированы! Теперь вы можете зайти на сайт.')</script>";
+      echo 'Вы успешно зарегистрированы! Теперь вы можете зайти на сайт.<a href="auth.php">Авторизоваться</a>';
     }
  else {
     echo "Ошибка! Вы не зарегистрированы.";

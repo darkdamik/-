@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin.css">
-    <title>Админ панель</title>
-</head>
-<body>
-<?php
-    include ("rega.php");
-    $result = mysqli_query($db,"SELECT id FROM users WHERE login='admin'");
-?>
 
-</body>
-</html>
+<?php
+session_start();
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 1) {
+  require_once 'admin–header.php';
+  echo '<section class="content">
+          <div class="container">
+            <h2>Вы вошли как администратор.</h2>
+          </div>
+        </section>
+        </body>  
+        </html>';
+} else {
+  echo '<form id="login–form" action="login.php" method="post">
+    <input type="text" name="username" placeholder="Login"
+   minlength="4" maxlength="15">
+    <input type="password" name="password" minlength="4" maxlength="15">
+    <input type="submit" value="Log in">
+  </form>';
+}
+
+?>

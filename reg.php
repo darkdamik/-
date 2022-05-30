@@ -15,30 +15,31 @@
                 <div class="logo">JO</div>
                 <div class="menu-head">
                 <ul class='head-menu'>
-                    <li class="head-menu_point"><a href= "index.html" class="link">Главная</a></li>
+                    <li class="head-menu_point"><a href= "index.php" class="link">Главная</a></li>
                     <li class="head-menu_point"><a href= "index-info.html" class="link">О компании</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Работодателям</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Соискателям</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Гарантии</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Отзывы</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Контакты</a></li>
-                    <li class="head-menu_point"><a href= "auth.html" class="link">Вход</a></li>
+                    <li class="head-menu_point"><a href= "permission.php" name='lk' class="link">Личный кабинет</a></li>
                 </ul>
                 </div>
             </div>
             <div class="head-title">
-                <h1 class="title">Вход</h1>
-                    <form action="testreg.php" method="post">
-                        <input class="auth_input" type="text" name="login" placeholder="Логин"><br>
-                        <input class="auth_input" type="password" name="password" placeholder="Пароль"><br><br>
+                <h1 class="title">Регистрация</h1>
+                    <form action="save_user.php" method="post">
+                        <input class="auth_input" type="text" name="fio" placeholder="ФИО"required><br>
+                        <input class="auth_input" type="text" name="login" placeholder="Логин"required><br>
+                        <input class="auth_input" type="password" name="password" placeholder="Пароль"required><br>
+                        <input class="auth_input" type="phone" name="phone" placeholder="Ваш номер телефона"required><br><br>
+                        <input class="auth_radio" type="radio" name="rad0" value="0"required> Я работодатель                   
+                        <input class="auth_radio" type="radio" name="rad0" value="1"required> Я соискатель
                         <div class="buttons">
-                            <div class="buttons-employer">
-                                    <input class="employer button" type="submit" value="Вход">
-                            </div>
+                            <div class="buttons-employer1">
+                                <input type="submit" name="reg" value="Зарегистрироваться" class="applicant button_submit"></div>
                         </div>
                     </form>
-                    <div class="buttons-employer buttons"><a href="reg.html"><button class="applicant button">Регистрация</button></a></div>
-                <br>
 
             </div>
         </div>

@@ -15,14 +15,31 @@
                 <div class="logo">JO</div>
                 <div class="menu-head">
                 <ul class='head-menu'>
-                    <li class="head-menu_point"><a href= "index.html" class="link">Главная</a></li>
+                    <li class="head-menu_point"><a href= "index.php" class="link">Главная</a></li>
                     <li class="head-menu_point"><a href= "index-info.html" class="link">О компании</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Работодателям</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Соискателям</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Гарантии</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Отзывы</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Контакты</a></li>
-                    <li class="head-menu_point"><a href= "auth.html" class="link">Вход</a></li>
+                    <?php
+                    session_start();
+                    if (!isset($_SESSION['login']) && isset($_COOKIE['login'])) 
+                    $_SESSION['login'] = $_COOKIE['login'];         
+                 
+                // Еще раз ищем имя пользователя в контексте сессии. 
+                $user = $_SESSION['login']; 
+                 
+                // Неавторизованных пользователей отправляем на страницу регистрации. 
+                if ($user == null) 
+                {  
+                    echo "<li class=\"head-menu_point\"><a href= \"auth.html\" name='lk' class=\"link\">Личный кабинет</a></li>";
+                } else {
+                    if ($user != null){
+                    echo "<li class=\"head-menu_point\"><a href= \"lk_applicant.html\" name='lk' class=\"link\">Личный кабинет</a></li>";
+                    }
+                }
+                    ?>
                 </ul>
                 </div>
             </div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_lk-applicant.css">
+    <title>Отзывы</title>
+</head>
+<body>
+    <header>
+        <div class='head'>
+            <div class="menu">
+                <div class="logo">JO</div>
+                <div class="menu-head">
+                <ul class='head-menu'>
+                    <li class="head-menu_point"><a href= "index.php" class="link">Главная</a></li>
+                    <li class="head-menu_point"><a href= "index-info.php" class="link">О компании</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Работодателям</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Соискателям</a></li>
+                    <li class="head-menu_point"><a href= "comment.html" class="link">Отзывы</a></li>
+                    <li class="head-menu_point"><a href= "#" class="link">Контакты</a></li>
+                    <li class="head-menu_point"><a href= "lk_applicant.php" name='lk' class="link">Личный кабинет</a></li>
+                </ul>
+                </div>
+            </div>
+    </header>
+    <div class="section">
+        <form action="" method="post" name="commentform" id="commentform">
+        <p><input class="form_text" type="text" name="author" id="author" value="" size="25" />
+        <small> Имя</small>
+        </p>
+        <p><input type="text" name="email" id="email" value="" size="25" />
+        <small> Mail</small>
+        </p>
+        <p><textarea name="comment" id="comment" cols="48" rows="8"> </textarea>
+        </p>
+        <p><input name="submit" type="submit" id="submit" value="Отправить" />
+        </p>
+        </form>
+        </div>
+        <div class="feedback">
+            <div class="order">
+                <form action="#" class="order__form">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <input required placeholder="Ваш email" name="email" type="email" class="modal__input">
+                    <input required placeholder="Ваш коментарий" name="coment" type="coment" class="modal__input">
+    
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+    
+        </div>
+    
+        <img src="./img/ico/telephone.gif" alt="telephone" class="telephone">
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <ul class="footer_title">
+                        <h2>© Все права защищены 2022 г.</h2>
+                    </ul>
+                    <ul class="footer_about">
+                        <h2>О нас</h2>
+                        <li class="footer_li"><a href="#" class="footer_link">О компании</a></li>
+                        <li class="footer_li"><a href="#" class="footer_link">Отзывы</a></li>
+                        <li class="footer_li"><a href="#" class="footer_link">Гарантии</a></li>
+                        <li class="footer_li"><a href="#" class="footer_link">Контакты</a></li>
+                    </ul>
+                    <ul class="footer_services">
+                        <h2>Сервис</h2>
+                        <li class="footer_li"><a href="#" class="footer_link">Поиск сотрудников</a></li>
+                        <li class="footer_li"><a href="#" class="footer_link">Найти работу</a></li>
+                    </ul>
+                    <ul class="footer_follow">
+                        <h2>Соц. сети</h2>
+                        <li><div class="social"><img src="./img/ico/Facebook.svg" class="social_icon" alt="facebook">Facebook</div></li>
+                        <li><div class="social"><img src="./img/ico/Instagram.svg" class="social_icon" alt="instagram">Instagram</div></li>
+                        <li><div class="social"><img src="./img/ico/Whatsapp.svg" class="social_icon" alt="whatsaap">Whatsaap</div></li>
+                        <li><div class="social"><img src="./img/ico/Twitter.svg" class="social_icon" alt="twitter">Twitter</div></li>
+                    </ul>
+                </div>
+             
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

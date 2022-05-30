@@ -15,14 +15,13 @@
                 <div class="logo">JO</div>
                 <div class="menu-head">
                 <ul class='head-menu'>
-                    <li class="head-menu_point"><a href= "index.html" class="link">Главная</a></li>
-                    <li class="head-menu_point"><a href= "index-info.html" class="link">О компании</a></li>
+                    <li class="head-menu_point"><a href= "index.php" class="link">Главная</a></li>
+                    <li class="head-menu_point"><a href= "index-info.php" class="link">О компании</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Работодателям</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Соискателям</a></li>
-                    <li class="head-menu_point"><a href= "#" class="link">Гарантии</a></li>
-                    <li class="head-menu_point"><a href= "#" class="link">Отзывы</a></li>
+                    <li class="head-menu_point"><a href= "comment.html" class="link">Отзывы</a></li>
                     <li class="head-menu_point"><a href= "#" class="link">Контакты</a></li>
-                    <li class="head-menu_point"><a href= "auth.html" class="link">Вход</a></li>
+                    <li class="head-menu_point"><a href= "permission.php" name='lk' class="link">Личный кабинет</a></li>
                 </ul>
                 </div>
             </div>
