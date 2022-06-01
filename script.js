@@ -1,6 +1,4 @@
 // Feedback
-
-
 const btn = document.querySelector('.telephone'),
       feedback = document.querySelector('.feedback'),
       ex = document.querySelector('.modal__close');
@@ -29,14 +27,7 @@ function closeAnimation () {
 
 btn.addEventListener('click', () => requestAnimationFrame(openAnimation));
 ex.addEventListener('click', () => requestAnimationFrame(closeAnimation));
-// document.addEventListener('click', (e) => {
-//     console.dir(e);
-//     if(e.target.className == 'order' || e.target.className == 'telephone'){
 
-//     }else{
-//         requestAnimationFrame(closeAnimation);
-//     }
-// });
 
 // Post Feedback
 
@@ -134,3 +125,12 @@ function showThanksModal (message) {
 
 
 }
+
+async function getResourse (url) {
+    let res = await fetch(url);
+    return res.json();
+};
+
+
+getResourse('http://localhost:3000/check')
+.then((data) =>console.log(data))

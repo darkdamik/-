@@ -1,6 +1,6 @@
 <?php
                     session_start();
-                    include ('db.php');
+                    include ('rega.php');
                     if (!isset($_SESSION['login']) && isset($_COOKIE['login'])) 
                     $_SESSION['login'] = $_COOKIE['login'];         
                 
